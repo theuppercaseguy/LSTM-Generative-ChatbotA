@@ -1,0 +1,133 @@
+/* Set global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+/* Style chat container */
+.chat-container {
+    /* margin: 2em auto; */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* height: 100vh; */
+}
+
+.mic-button{
+    border-color: white;
+    font-size: inherit;
+    border-radius: 100%;
+    height: inherit;
+    width: inherit;
+    margin: 0 10px 0 0;
+    color: red;
+    background-color: inherit;
+    transition:all 0.2s ease-in;
+}
+.mic-button:hover{
+    cursor: pointer;
+    background-color: black;
+    border-color: black;
+}
+.hear-button{
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    position: sticky;
+    top: 100%;
+    transition:all 0.2s ease-in;
+    border-color: silver;
+}
+.hear-button:hover{
+    border-color: black;
+    cursor: pointer;
+    color: black;
+    /* font-weight: bold; */
+}
+
+@media (max-width: 640px) {
+    .chat-container {
+        max-width: 100%;
+        margin: 2em 1em;
+    }
+}
+
+/* Style chat log */
+.chatlog {
+    height: calc(100vh - 100px);
+    /* Subtract height of header and chat form */
+    padding: 1em;
+    overflow-y: scroll;
+}
+
+.message {
+    margin-bottom: 1em;
+}
+
+.message.received {
+    background-color: #f2f2f2;
+    padding: 0.5em;
+    border-radius: 0.5em 0.5em 0.5em 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message.sent {
+    background-color: #e2f2ff;
+    padding: 0.5em;
+    border-radius: 0.5em 0.5em 0 0.5em;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style chat form */
+.chat-form {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    border-top: 1px solid #ccc;
+}
+
+.chat-form input[type="text"] {
+    flex-grow: 1;
+    margin-right: 1em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-form button[type="submit"] {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.chat-form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+@media (max-width: 640px) {
+    .chat-form {
+        flex-direction: column;
+    }
+
+    .chat-form input[type="text"] {
+        margin-bottom: 1em;
+    }
+}

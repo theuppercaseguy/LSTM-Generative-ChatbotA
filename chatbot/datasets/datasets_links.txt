@@ -1,0 +1,8 @@
+# LINKS
+not uploading the data set file, cause its of 172 mb
+
+link(1): https://www.kaggle.com/datasets/gpreda/lionel-messi-tweets?select=messi_tweets.csv
+
+link(2): https://www.kaggle.com/datasets/ibrahimserouis99/twitter-sentiment-analysis-and-word-embeddings
+
+Colab Link: https://colab.research.google.com/drive/1Yvndl4Ca65a7wieC9n55Soy7fJ6zio-x?usp=sharing

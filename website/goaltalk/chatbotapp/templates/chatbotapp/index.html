@@ -1,0 +1,66 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'chatbotapp/css/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    <main>
+        <div class="chat-container">
+            <div class="chatlog">
+                <div class="message received">
+                    <p>Hello! How can I assist you today?</p>
+                </div>
+                <div class="message sent">
+                    <p>Hi, what is your name.</p>
+                </div>
+                <div class="message received">
+                    <p>Who is the best player of football?</p>
+                </div>
+                <div class="message sent">
+                    <p>what do you know about laliga?</p>
+                </div>
+                <div class="message received">
+                    <p>tell me about football.</p>
+                </div>
+                <div class="message received">
+                    <p>what can i help you with.</p>
+                </div>
+
+                <button class="hear-button" type="">Click to Hear</button>
+            </div>
+
+            
+
+            <!-- <button type="">Click to Hear</button> -->
+            <form class="chat-form" action="" method="post">
+                {%csrf_token%}
+
+
+                
+                <input type="text" placeholder="Type your message..." name="inp_message" required maxlength="100" minlength="10">
+                <button class="mic-button" style="font-size:24px"><i class="fa fa-microphone"></i></button>
+                <button type="submit">Send</button>
+                
+            </form>
+
+          
+        </div>
+    </main>
+
+
+
+
+
+</body>
+
+</html>
